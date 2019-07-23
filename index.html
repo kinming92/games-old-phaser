@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Navigation Page</title>
+        <meta charset="UTF-8">
+        <style>
+            .main {
+                margin-left: 300px; /* Same as the width of the sidenav */
+                font-size: 20px; /* Increased text to enable scrolling */
+                padding: 0px 10px;
+            }
+            .sidenav {
+                height: 100%;
+                width: 280px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: lightsalmon;
+                overflow-x: hidden;
+                padding-top: 50px;
+            }
+
+            .sidenav li a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+                display: block;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+  
+            .old, .new{
+                list-style: none;
+                padding: 10px;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidenav">
+        <ul class="old">
+            <li><a href="app1.html">app1</a></li>
+            <li><a href="app2.html">app2</a></li>
+            <li><a href="app3.html">app3</a></li>
+            <li><a href="app4.html">app4</a></li>
+            <li><a href="app5.html">app5</a>
+            <li><a href="app6.html">app6</a></li>
+        </ul>
+     
+
+        <ul class="new">
+            <li><a href="game2-1.html">Organize-rocks-by-color-1</a></li>
+            <li><a href="game2-1.html">Organize-rocks-by-color-2</a></li>
+            <li><a href="game3-1.html">Organize-crystals-by-color-1</a></li>
+            <li><a href="game3-2.html">Organize-crystals-by-color-2</a></li>
+            <li><a href="game4-1-2.html">Copy-the-sequence</a></li>
+            <li><a href="game5-1.html">Complete-the-sequence-1</a></li>
+            <li><a href="game5-2.html">Complete-the-sequence-2</a></li>
+            <li><a href="game5-3.html">Complete-the-sequence-3</a></li>
+            <li><a href="game6-1.html">Organize-by-item-1</a></li>
+            
+        </ul>
+        </div>
+              
+        <div class="main">
+                <h1>A repost of old work using phaser game-engine</h1>
+                <p>I implemented the snap-grid feature for app1, app2 and app5. Using the similar layout to
+                   create another 5 similar game based on my mentor's requirement.
+                </p>
+        </div>
+    </body>
+
+</html>
