@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <title>Expeditions: Move by amount!</title>
 		<script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
-		<script type="text/javascript" src="js/eventemitter2.js"></script>
-        <script type="text/javascript" src="js/roslib.min.js"></script>
+		<!--script type="text/javascript" src="js/eventemitter2.js"></script-->
+        <!--script type="text/javascript" src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script-->
 		<style>
         body{
             width: 100%;
@@ -63,7 +63,7 @@
         var panelCoordX = new Array(); // for alining the objects on the panel
         var panelCoordY = new Array();
 
-		// *** ROS ***
+		/* *** ROS ***
         var ros = new ROSLIB.Ros({
             //url : 'ws://localhost:9090'
             url : 'ws://192.168.7.191:9090'
@@ -81,7 +81,7 @@
             messageType : 'sar_robot_command_msgs/RobotCommand' 
         });
 
-		
+		*/
 		// *** Phaser ***
         function preload () {
 			initailizeVariables();
@@ -90,6 +90,7 @@
             window.addEventListener('resize', function(event){resizeGame();});
             var resizeGame = function () { game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;  game.scale.updateLayout();}
 
+			/*
             ros.on('connection', function() {
                 console.log('Connected to websocket server.');
             });
@@ -126,6 +127,7 @@
             do_start.id = 'MoveByName_'+target+'_EN';
             do_start.properties = 'Put '+target+' moon rocks into the box.';
             robot_command.publish(do_start);
+			*/
         }
 		
         function create () {
@@ -173,6 +175,7 @@
 				case PACK_MOONROCKS:
 					sprite.frame=1;
 					stat = messageOnObjectCount();
+					/*
 					if (!stat[0]) attempts++;
 
 					var log_complete = new ROSLIB.Message({
@@ -209,6 +212,7 @@
 						}
 					}
 					robot_command.publish(do_complete);
+					*/
 					
 					// condition for changing game
 					if (onBox.total==target){
@@ -219,6 +223,7 @@
 				case CHARGE_SPACESHIP:
 					sprite.frame=1;
 					stat = messageOnObjectCount();
+					/*
 					if (!stat[0]) attempts++;
 
 					var log_complete = new ROSLIB.Message({
@@ -260,6 +265,7 @@
 					if (onBox.total==target){
 						changeActivity(); 
 					}
+					*/
 					break;
 				default:
 			}
