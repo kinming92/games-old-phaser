@@ -3,6 +3,7 @@
     <head>
         <title>Navigation Page</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/flip-card.css">
         <style>
             .main {
                 margin-left: 300px; /* Same as the width of the sidenav */
@@ -42,35 +43,229 @@
     </head>
     <body>
         <div class="sidenav">
-        <ul class="old">
-            <li><a href="app1.html">Move-rocks</a></li>
-            <li><a href="app2.html">Count-star</a></li>
-            <li><a href="app3.html">Choose-planet</a></li>
-            <li><a href="app4.html">Compare-star</a></li>
-            <li><a href="app5.html">Count-star</a>
-            <li><a href="app6.html">Complete-the-number-oder</a></li>
-        </ul>
-     
+            <ul class="old">
+                <li><a href="app1.html">Count-rocks-by-number</a></li>
+                <li><a href="app2.html">Count-stars-by-number</a></li>
+                <li><a href="app3.html">Choose-the-right-number</a></li>
+                <li><a href="app4.html">Compare-and-count-star</a></li>
+                <li><a href="app5.html">Count-crytals-by-number</a>
+                <li><a href="app6.html">Complete-number-ordering</a></li>
+            </ul>
+        
 
-        <ul class="new">
-            <li><a href="game2-1.html">Organize-rocks-by-color-1</a></li>
-            <li><a href="game2-1.html">Organize-rocks-by-color-2</a></li>
-            <li><a href="game3-1.html">Organize-crystals-by-color-1</a></li>
-            <li><a href="game3-2.html">Organize-crystals-by-color-2</a></li>
-            <li><a href="game4-1-2.html">Copy-the-sequence</a></li>
-            <li><a href="game5-1.html">Complete-the-sequence-1</a></li>
-            <li><a href="game5-2.html">Complete-the-sequence-2</a></li>
-            <li><a href="game5-3.html">Complete-the-sequence-3</a></li>
-            <li><a href="game6-1.html">Organize-by-item-1</a></li>
-            
-        </ul>
+            <ul class="new">
+                <li><a href="game2-1.html">Organize-rocks-by-color-1</a></li>
+                <li><a href="game2-3.html">Organize-rocks-by-color-2</a></li>
+                <li><a href="game3-1.html">Organize-crystals-by-color-1</a></li>
+                <li><a href="game3-2.html">Organize-crystals-by-color-2</a></li>
+                <li><a href="game4-1-2.html">Copy-the-sequence</a></li>
+                <li><a href="game5-1.html">Complete-the-sequence-1</a></li>
+                <li><a href="game5-2.html">Complete-the-sequence-2</a></li>
+                <li><a href="game5-3.html">Complete-the-sequence-3</a></li>
+                <li><a href="game6-1.html">Organize-by-item-1</a></li>
+                
+            </ul>
         </div>
               
         <div class="main">
-                <h1>A repost of old work using phaser game-engine</h1>
-                <p>I implemented the snap-grid feature for app1, app2 and app5. Using the similar layout to
-                   create another 5 similar game based on my mentor's requirement.
-                </p>
+            <h1>A repost of old work using phaser game-engine</h1>
+            <p>I implemented the snap-grid feature for app1, app2 and app5. Using the similar layout to
+                create another 5 similar game based on my mentor's requirement.
+            </p>
+            <div class="container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game2-1.png" alt="game2-1" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Organize Rocks by Color</h1>
+                            <p>Move the rocks into the correct box type</p>
+                            <a href="app1.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game2-3.png" alt="game2-3" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Organize Rocks by Color 2</h1>
+                            <p>Move the rocks into the correct colored box</p>
+                            <a href="game2-3.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game3-1.png" alt="game3-1" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Organize Crystals by Color</h1>
+                            <p>Move the crystals into the correct box type</p>
+                            <a href="game3-1.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game3-2.png" alt="game3-2" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Organize Crystals by Color 2</h1>
+                            <p>Move the rocks into the correct colored box</p>
+                            <a href="game3-2.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game4-1-2.png" alt="game4-1-2" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Copy the sequence</h1>
+                            <p>Copy the provided sequence</p>
+                            <a href="game4-1-2.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game5-1.png" alt="game5-1" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Complete the sequence 1</h1>
+                            <p>Complete the right sequence with similar items</p>
+                            <a href="game5-1.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game5-2.png" alt="game5-2" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Complete the sequence 2</h1>
+                            <p>Complete the right sequence with similar items</p>
+                            <a href="game5-2.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game5-3.png" alt="game5-3" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Complete the sequence 3</h1>
+                            <p>Complete the right sequence with similar items</p>
+                            <a href="game5-3.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/game6-1.png" alt="game6-1" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Organize by Items</h1>
+                            <p>Move the rock, crystals, and star into the right box</p>
+                            <a href="game6-1.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/app1.png" alt="app1" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Count Rocks by Number</h1>
+                            <p>Move the rocks into the box</p>
+                            <a href="app1.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/app2.png" alt="app2" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                        <h1>Count Stars by Number</h1>
+                        <p>Move the stars into the box</p>
+                        <a href="app2.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/app3.png" alt="app3" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Choose the Right Number</h1>
+                            <p>Guess the correct number shown on the planet</p>
+                            <a href="app3.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/app4.png" alt="app4" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Count and Compare the Stars</h1>
+                            <p>Count the number of stars and guess the right number</p>
+                            <a href="app4.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/app5.png" alt="app5" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Count Crystals by Number</h1>
+                            <p>Move the crystals into the box</p>
+                            <a href="app5.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                        <img src="images/app6.png" alt="app6" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Complete the Number Ordering</h1>
+                            <p>Move the icon based on the number order</p>
+                            <a href="app6.html">Live</a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
         </div>
     </body>
 
